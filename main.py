@@ -12,7 +12,7 @@ import os
 
 recognizer=sr.Recognizer()
 engine=pyttsx3.init()
-newsapi="0091906df1e54199a58bb9dd99ea6474"
+newsapi="NEWS_API KEY"
 
 def speak_old(text):
     engine.say(text)
@@ -36,11 +36,11 @@ def speak(text):
 
 
 # Set your OpenAI API key
-openai.api_key = "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"
+openai.api_key = "open AI API key"
 
 def aiProcess(command):
     # Set your OpenAI API key
-    openai.api_key = "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"
+    openai.api_key = "openai API key"
     
     try:
         response = openai.ChatCompletion.create(
